@@ -126,10 +126,10 @@ footer {
   padding-bottom: 8px;
 }
 .full {
-  border-bottom: 0.5px solid #cccccc;
+  border-bottom: 0.5px solid rgba(204, 204, 204, 0.5);
 }
 .full thead {
-  border-bottom: 0.5px solid #999999;
+  border-bottom: 0.5px solid rgba(153, 153, 153, 0.5);
 }
 
 .full thead th {
