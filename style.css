@@ -1,3 +1,19 @@
+@page {
+  size: 21cm 29.7cm;
+  margin: 0;
+}
+@media print {
+  #header,
+  .sub_visual,
+  .utility_wrap,
+  .btn_wrap {
+    display: none;
+  }
+  .contents {
+    padding: 0;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -7,16 +23,21 @@ p {
 }
 
 body {
+  size: 21cm 29.7cm;
+
   font-family: 'Helvetica';
-  color: #111111;
+  font-style: normal;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 9px;
-  padding-right: 52px;
-  padding-left: 52px;
-  padding-top: 48px;
+  color: #111111;
+  padding: 52px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
 .heading {
   font-size: 28px;
   font-weight: 400;
@@ -26,13 +47,14 @@ body {
 
 .squars-info {
   position: absolute;
-  top: 56px;
+  top: 100px;
   right: 52px;
   text-align: right;
+  font-family: 'Roboto';
 }
 
 .squars-info p {
-  margin-bottom: 2px;
+  padding-bottom: 4px;
 }
 
 h2 {
@@ -115,6 +137,7 @@ h3 {
 }
 
 footer {
+  font-family: 'Roboto';
   font-size: 8px;
   line-height: 11px;
   color: #666666;
@@ -134,6 +157,9 @@ footer {
 
 .full thead th {
   padding-bottom: 8px;
+}
+.subscription tr td {
+  vertical-align: top;
 }
 .amount {
   margin-top: 16px;
