@@ -105,9 +105,8 @@ hr {
 }
 
 footer {
-  /* position: absolute;
-  left: 52px;
-  bottom: 52px; */
+  font-size: 8px;
+  line-height: 11px;
   color: #666666;
 }
 
