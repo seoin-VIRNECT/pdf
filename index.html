@@ -8,11 +8,18 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Invoice</h1>
+    <h1 class="heading">Invoice</h1>
+    <div class="squars-info">
+      <img src="./logo.png" alt="logo" width="98px">
+      <p>Jakov-Lind-straBe 2/Stiege 1/5 1020 Wien</p>
+      <p>Austria</p>
+      <p>+431 22644 4510</p>
+      <a style="color:#009DFF; text-decoration: none;" href="mailto:support@squars.io">support@squars.io</a>
+    </div>
     <div>
       <h2>Bill to</h2>
-      <div>
-        <p>SQUARS</p>
+      <div class="bill-to">
+        <h3>SQUARS</h3>
         <p>Abdulkerim Dur</p>
         <p>squars@virnect.com</p>
         <p>+431 22644 4510</p>
@@ -21,74 +28,129 @@
         <p>Jakov-Lind-straBe 2/Stiege 1/5 1020 Wien</p>
         <p>Las Vegas</p>
         <br />
-        <p>
-          <span>State or Province</span>
-          <span>ATI12356</span>
-        </p>
-        <p>
-          <span>ZIP or Postal Code</span>
-          <span>12452</span>
-        </p>
-        <p>
-          <span>VAT or Tax ID</span>
-          <span>DE1111</span>
-        </p>
-        <p>
-          <span>Coporate number</span>
-          <span>0285721</span>
-        </p>
-      </div>
 
-      <hr />
-      <div>
-        <p>
-          <span>Invoice ID No.</span>
-          <span>IN545482121210</span>
-        </p>
-        <p>
-          <span>Billed on</span>
-          <span>11 Mar 2023</span>
-        </p>
-        <p>
-          <span>Due Date</span>
-          <span>10 Mar 2024</span>
-        </p>
+        <table class="tg">
+          <tbody class="bill-to-1-table">
+            <tr>
+              <td class="tg-0pky">State or Province</td>
+              <td class="tg-1">ATI12356</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">ZIP or Postal Code</td>
+              <td class="tg-1">12452</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">VAT or Tax ID</td>
+              <td class="tg-1">DE1111</td>
+            </tr>
+            <tr >
+              <td class="tg-0pky">Coporate number</td>
+              <td class="tg-1">0285721</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr style="margin-top:24px; margin-bottom:12px;" />
+        <table class="tg">
+          <tbody class="bill-to-2-table">
+            <tr>
+              <td class="tg-0pky">Invoice ID No.</td>
+              <td class="tg-0pky bold">IN54548212121</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">Billed on</td>
+              <td class="tg-0pky bold">11 Mar 2023</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">Due Date</td>
+              <td class="tg-0pky bold">10 Mar 2024</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <hr />
+    <hr style="margin-top:12px; margin-bottom:32px;"/>
+    <div>
+      <h2 style="margin-bottom:16px;">Subscriptions</h2>
+      <table class="tg full subscription">
+        <thead>
+          <tr>
+            <th class="tg-0pky">License grade</th>
+            <th class="tg-0pky">Item name</th>
+            <th class="tg-0pky">Date</th>
+            <th class="tg-0pky">Qty</th>
+            <th class="tg-0pky">Unit price</th>
+            <th class="tg-0lax">Tax</th>
+            <th class="tg-0lax">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-3">Standard Plan</td>
+            <td class="tg-3">Standard Plan</td>
+            <td class="tg-3">13 June 2022</td>
+            <td class="tg-3">1</td>
+            <td class="tg-3">€1098.9</td>
+            <td class="tg-3">00.00% incl.</td>
+            <td class="tg-3">€1098.9</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="amount">
+        <table class="tg">
+          <tbody>
+            <tr>
+              <td class="tg-5">Subtotal</td>
+              <td class="tg-4">€1098.9</td>
+            </tr>
+            <tr>
+              <td class="tg-5">Total</td>
+              <td class="tg-4">€1098.9</td>
+            </tr>
+            <tr>
+              <td class="tg-5">Sales tax <span style="color:#999999;">(00.00% incl. on €00.00)</span></td>
+              <td class="tg-4">€0</td>
+            </tr>
+            <tr>
+              <td class="tg-5">Total excluding tax</td>
+              <td class="tg-4">€0</td>
+            </tr>
+            <tr>
+              <td style="color:#111111; font-size:10px; line-height: 11px; padding-top:20px;">Amount due</td>
+              <td style="color:#111111; font-weight: 700; font-size: 16px; line-height: 18px; padding-top:16px;">€1098.9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div>
-      <h2>Subscriptions</h2>
-      <div>
-        <p>
-          <span>Subtotal</span>
-          <span>€1098.9</span>
-        </p>
-        <p>
-          <span>Total</span>
-          <span>€1098.9</span>
-        </p>
-        <p>
-          <span>Sales tax (00.00% incl. on €00.00)</span>
-          <span>€0</span>
-        </p>
-        <p>
-          <span>Total excluding tax</span>
-          <span>€0</span>
-        </p>
-        <p>
-          <strong>Amount due</strong>
-          <strong>€1098.9</strong>
-        </p>
-      </div>
-    </div>
-    <div>
-      <h2>Payment</h2>
+      <h2 style="margin-top:36px; margin-bottom: 16px;">Payment</h2>
+      <table class="tg full">
+        <thead>
+          <tr>
+            <th class="tg-0pky">Status</th>
+            <th class="tg-0pky">Date</th>
+            <th class="tg-0pky">Card</th>
+            <th class="tg-0pky">card number</th>
+            <th class="tg-0pky">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-3">Paid</td>
+            <td class="tg-3">13 June 2022 12:09</td>
+            <td class="tg-3">master</td>
+            <td class="tg-3">**** **** **** 1837</td>
+            <td class="tg-3">€1098.9</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <p>
+    <footer style="margin-top:41px; margin-bottom:52px;">
       If you have any questions, visit our support site at
-      https://squars.io/contact, contact us at support@squars.io, or call at +43
-      1 226444510.
-    </p>
+      <a href="https://squars.io/contact">https://squars.io/contact</a>, contact us at <a href="mailto:support@squars.io">support@squars.io</a>, or call at <a href="tel:+43
+      1 226444510">+43
+      1 226444510.</a>
+    </footer>
   </body>
 </html>

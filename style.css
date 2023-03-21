@@ -1,0 +1,144 @@
+h1,
+h2,
+h3,
+body {
+  margin: 0px;
+}
+
+body {
+  color: #111111;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  padding-right: 52px;
+  padding-left: 52px;
+  padding-top: 48px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 32px;
+}
+
+.squars-info {
+  position: absolute;
+  top: 56px;
+  right: 52px;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 9px;
+  padding-top: 12px;
+}
+
+hr {
+  border: 0.5px solid #cccccc;
+}
+.bill-to p {
+  color: #333333;
+}
+
+.tg .bill-to-1-table td {
+  padding-right: 7px;
+}
+.tg .bill-to-2-table td {
+  padding-right: 24px;
+}
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-size: 8px;
+  overflow: hidden;
+  word-break: normal;
+  padding-bottom: 4px;
+}
+
+.tg th {
+  font-size: 8px;
+  color: #666666;
+  font-weight: normal;
+  overflow: hidden;
+  word-break: normal;
+}
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+  color: #666666;
+}
+
+.tg .tg-1 {
+  color: #333333;
+}
+
+.tg .tg-3 {
+  color: #111111;
+  padding: 16px 0;
+}
+.tg .tg-4 {
+  text-align: right;
+  color: #111111;
+  padding-bottom: 8px;
+}
+.tg .tg-5 {
+  color: #666666;
+  font-size: 8px;
+  line-height: 9px;
+  padding-bottom: 8px;
+}
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+
+footer {
+  /* position: absolute;
+  left: 52px;
+  bottom: 52px; */
+  color: #666666;
+}
+
+.bold {
+  color: #111111;
+  font-weight: 700;
+}
+.full {
+  border-bottom: 0.5px solid #999999;
+}
+.full thead {
+  border-bottom: 0.5px solid #999999;
+}
+
+.full thead th {
+  padding-bottom: 8px;
+}
+.amount {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.amount .tg td {
+  padding-right: 53px;
+}
+
+.full {
+  width: 100%;
+}
+
+a {
+  color: #333333;
+}
