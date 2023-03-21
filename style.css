@@ -1,11 +1,13 @@
 h1,
 h2,
 h3,
-body {
+body,
+p {
   margin: 0px;
 }
 
 body {
+  font-family: 'Helvetica';
   color: #111111;
   font-weight: 400;
   font-size: 8px;
@@ -26,6 +28,11 @@ body {
   position: absolute;
   top: 56px;
   right: 52px;
+  text-align: right;
+}
+
+.squars-info p {
+  margin-bottom: 2px;
 }
 
 h2 {
@@ -39,13 +46,16 @@ h3 {
   font-size: 8px;
   line-height: 9px;
   padding-top: 12px;
+  margin-bottom: 8px;
 }
 
-hr {
-  border: 0.5px solid #cccccc;
+.line {
+  border-bottom: 1px solid #cccccc;
+  transform: scaleY(0.5);
 }
 .bill-to p {
   color: #333333;
+  margin-bottom: 4px;
 }
 
 .tg .bill-to-1-table td {
@@ -110,12 +120,13 @@ footer {
   color: #666666;
 }
 
-.bold {
+.tg .bold {
   color: #111111;
   font-weight: 700;
+  padding-bottom: 8px;
 }
 .full {
-  border-bottom: 0.5px solid #999999;
+  border-bottom: 0.5px solid #cccccc;
 }
 .full thead {
   border-bottom: 0.5px solid #999999;
