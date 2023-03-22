@@ -2,6 +2,7 @@
   size: A4;
   margin: 0;
 }
+
 @media print {
   #header,
   .sub_visual,
@@ -9,42 +10,482 @@
   .btn_wrap {
     display: none;
   }
+
+  /* 서브 픽셀 해결 */
+  body {
+    margin-top: -1px;
+  }
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    overflow: hidden;
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    page-break-before: always;
+    margin: 0;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    color: #111111;
+    padding: 52px;
+  }
+
+  .heading {
+    font-size: 28pt;
+    font-weight: 400;
+    line-height: 115%;
+    padding-bottom: 32px;
+  }
+
+  .squars-info {
+    position: absolute;
+    top: 100px;
+    right: 52px;
+    text-align: right;
+    font-family: 'Roboto';
+  }
+
+  .squars-info p {
+    padding-bottom: 2px;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    line-height: 14px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 8pt;
+    line-height: 115%;
+    padding-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .line {
+    border-bottom: 1px solid #cccccc;
+    transform: scaleY(0.5);
+  }
+  .bill-to p {
+    color: #333333;
+    margin-bottom: 4px;
+  }
+
+  .tg .bill-to-1-table td {
+    padding-right: 7px;
+  }
+  .tg .bill-to-2-table td {
+    padding-right: 24px;
+  }
+
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .tg td {
+    overflow: hidden;
+    word-break: normal;
+    padding-bottom: 4px;
+  }
+
+  .tg th {
+    color: #666666;
+    font-weight: normal;
+    overflow: hidden;
+    word-break: normal;
+  }
+  .tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+    color: #666666;
+  }
+
+  .tg .tg-1 {
+    color: #333333;
+  }
+
+  .tg .tg-3 {
+    color: #111111;
+    padding: 16px 0;
+  }
+  .tg .tg-4 {
+    text-align: right;
+    color: #111111;
+    padding-bottom: 8px;
+  }
+  .tg .tg-5 {
+    color: #666666;
+    padding-bottom: 8px;
+  }
+  .tg .tg-0lax {
+    text-align: left;
+    vertical-align: top;
+  }
+
+  footer {
+    font-family: 'Roboto';
+    line-height: 115%;
+    color: #666666;
+    position: absolute;
+    bottom: 52px;
+    left: 52px;
+  }
+
+  .tg .bold {
+    color: #111111;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  .full {
+    border-bottom: 1px solid rgb(204, 204, 204);
+  }
+  .full thead {
+    border-bottom: 1px solid rgb(153, 153, 153);
+  }
+
+  .full thead th {
+    padding-bottom: 8px;
+  }
+  .subscription tr td {
+    vertical-align: top;
+  }
+  .amount {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-left: 290px;
+  }
+
+  .amount .tg td:first-child {
+    padding-right: 144px;
+  }
+
+  .full {
+    width: 100%;
+  }
+
+  a {
+    color: #333333;
+  }
+
+  .font-8 {
+    font-size: 10pt;
+    line-height: 115%;
+    transform: scale(0.8) translateX(-84px);
+  }
+
+  .tg .font-8 {
+    font-size: 10pt;
+    transform: scale(0.8) translateX(-16px);
+  }
+
+  .squars-info .font-8 {
+    font-size: 10pt;
+    transform: scale(0.8) translateX(24px);
+  }
+
+  .font-8-group {
+    font-size: 10pt;
+    transform: scale(0.8) translateX(60px);
+  }
 }
 
+/* 서브 픽셀 해결 */
+body {
+  margin-top: -1px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
-body,
+h4,
+h5,
+h6,
 p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
 table,
+caption,
+tbody,
+tfoot,
+thead,
 tr,
+th,
 td,
-div {
-  margin: 0px;
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 body {
+  overflow: hidden;
   position: relative;
-  margin: 0;
+  width: 210mm;
   height: 297mm;
+  page-break-before: always;
+  margin: 0;
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 9px;
+  font-size: 10pt;
+  line-height: 115%;
   color: #111111;
   padding: 52px;
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 28pt;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 115%;
   padding-bottom: 32px;
 }
 
@@ -61,15 +502,15 @@ body {
 }
 
 h2 {
-  font-size: 12px;
+  font-size: 12pt;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 115%;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 8px;
-  line-height: 9px;
+  font-size: 8pt;
+  line-height: 115%;
   padding-top: 12px;
   margin-bottom: 8px;
 }
@@ -129,7 +570,7 @@ h3 {
 }
 .tg .tg-5 {
   color: #666666;
-  font-size: 8px;
+  font-size: 8pt;
   line-height: 9px;
   padding-bottom: 8px;
 }
@@ -167,11 +608,12 @@ footer {
 }
 .amount {
   margin-top: 16px;
-  margin-left: 284px;
+  margin-bottom: 24px;
+  margin-left: 290px;
 }
 
 .amount .tg td:first-child {
-  padding-right: 142px;
+  padding-right: 144px;
 }
 
 .full {
@@ -183,21 +625,22 @@ a {
 }
 
 .font-8 {
-  font-size: 10px;
-  transform: scale(0.8) translateX(-80px);
+  font-size: 10pt;
+  line-height: 115%;
+  transform: scale(0.8) translateX(-84px);
 }
 
 .tg .font-8 {
-  font-size: 10px;
+  font-size: 10pt;
   transform: scale(0.8) translateX(-16px);
 }
 
 .squars-info .font-8 {
-  font-size: 10px;
+  font-size: 10pt;
   transform: scale(0.8) translateX(24px);
 }
 
 .font-8-group {
-  font-size: 10px;
+  font-size: 10pt;
   transform: scale(0.8) translateX(60px);
 }
