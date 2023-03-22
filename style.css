@@ -1,5 +1,5 @@
 @page {
-  size: 21cm 29.7cm;
+  size: A4;
   margin: 0;
 }
 @media print {
@@ -8,9 +8,6 @@
   .utility_wrap,
   .btn_wrap {
     display: none;
-  }
-  .contents {
-    padding: 0;
   }
 }
 
@@ -26,8 +23,16 @@ div {
   margin: 0px;
 }
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 body {
-  size: 21cm 29.7cm;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 
   font-family: 'Helvetica';
   font-style: normal;
@@ -143,6 +148,8 @@ footer {
   font-family: 'Roboto';
   line-height: 11px;
   color: #666666;
+  position: absolute;
+  bottom: 52px;
 }
 
 .tg .bold {
@@ -169,8 +176,8 @@ footer {
   justify-content: flex-end;
 }
 
-.amount .tg td {
-  padding-right: 53px;
+.amount .tg td:first-child {
+  padding-right: 142px;
 }
 
 .full {
@@ -193,10 +200,10 @@ a {
 
 .squars-info .font-8 {
   font-size: 10px;
-  transform: scale(0.8) translateX(16px);
+  transform: scale(0.8) translateX(24px);
 }
 
 .font-8-group {
   font-size: 10px;
-  transform: scale(0.8) translateX(100px);
+  transform: scale(0.8) translateX(60px);
 }
