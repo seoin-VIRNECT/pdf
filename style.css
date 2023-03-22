@@ -29,11 +29,9 @@ div {
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  position: relative;
   margin: 0;
-  padding: 0;
-
+  height: 297mm;
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
@@ -43,10 +41,6 @@ body {
   padding: 52px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
 .heading {
   font-size: 28px;
   font-weight: 400;
@@ -150,6 +144,7 @@ footer {
   color: #666666;
   position: absolute;
   bottom: 52px;
+  left: 52px;
 }
 
 .tg .bold {
@@ -158,10 +153,10 @@ footer {
   padding-bottom: 8px;
 }
 .full {
-  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
 .full thead {
-  border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+  border-bottom: 1px solid rgb(153, 153, 153);
 }
 
 .full thead th {
@@ -172,8 +167,7 @@ footer {
 }
 .amount {
   margin-top: 16px;
-  display: flex;
-  justify-content: flex-end;
+  margin-left: 284px;
 }
 
 .amount .tg td:first-child {
@@ -190,7 +184,7 @@ a {
 
 .font-8 {
   font-size: 10px;
-  transform: scale(0.8) translateX(-84px);
+  transform: scale(0.8) translateX(-80px);
 }
 
 .tg .font-8 {
