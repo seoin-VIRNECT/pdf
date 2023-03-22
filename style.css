@@ -18,7 +18,11 @@ h1,
 h2,
 h3,
 body,
-p {
+p,
+table,
+tr,
+td,
+div {
   margin: 0px;
 }
 
@@ -93,14 +97,12 @@ h3 {
 }
 
 .tg td {
-  font-size: 8px;
   overflow: hidden;
   word-break: normal;
   padding-bottom: 4px;
 }
 
 .tg th {
-  font-size: 8px;
   color: #666666;
   font-weight: normal;
   overflow: hidden;
@@ -139,7 +141,6 @@ h3 {
 
 footer {
   font-family: 'Roboto';
-  font-size: 8px;
   line-height: 11px;
   color: #666666;
 }
