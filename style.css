@@ -1,6 +1,6 @@
 @page {
   size: A4;
-  margin: 0;
+  margin: 52px;
 }
 @media print {
   #header,
@@ -163,7 +163,6 @@ body {
   font-size: 8pt;
   line-height: 115%;
   color: #111111;
-  padding: 52px;
 }
 
 .heading {
@@ -176,7 +175,7 @@ body {
 .squars-info {
   position: absolute;
   top: 100px;
-  right: 52px;
+  right: 0;
   text-align: right;
   font-family: 'Roboto';
 }
@@ -268,13 +267,18 @@ footer {
   color: #666666;
   position: absolute;
   bottom: 156px;
-  left: 52px;
+  left: 0;
+  width: 100%;
+  /* margin-right: 52px; */
 }
 
 .tg .bold {
   color: #111111;
   font-weight: 700;
   padding-bottom: 8px;
+}
+.full-top {
+  background: url('https://image.squars.io/bg/line.png') repeat-x top;
 }
 .full {
   background: url('https://image.squars.io/bg/line.png') repeat-x bottom;
@@ -295,7 +299,7 @@ footer {
 .amount {
   position: absolute;
   margin-top: 16px;
-  right: 20px;
+  right: 0;
   font-size: 8pt;
 }
 
