@@ -268,7 +268,7 @@ footer {
   line-height: 11px;
   color: #666666;
   position: absolute;
-  bottom: 52px;
+  bottom: 104px;
   left: 52px;
 }
 
@@ -287,17 +287,25 @@ footer {
 .full thead th {
   padding-bottom: 8px;
 }
+.subscription-wrapper {
+  position: relative;
+}
 .subscription tr td {
   vertical-align: top;
 }
 .amount {
+  position: absolute;
   margin-top: 16px;
-  margin-bottom: 24px;
-  margin-left: 290px;
+  right: 20px;
+  font-size: 8pt;
 }
 
-.amount .tg td:first-child {
-  padding-right: 144px;
+.amount tr td:first-child {
+  padding-right: 53pt;
+}
+
+.amount tr td:last-child {
+  text-align: right;
 }
 
 .full {
@@ -322,9 +330,4 @@ a {
 .squars-info .font-8 {
   font-size: 10pt;
   transform: scale(0.8) translateX(24px);
-}
-
-.font-8-group {
-  font-size: 10pt;
-  transform: scale(0.8) translateX(60px);
 }
