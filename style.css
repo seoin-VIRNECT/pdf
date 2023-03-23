@@ -9,11 +9,14 @@
   .btn_wrap {
     display: none;
   }
-}
 
-/* 서브 픽셀 해결 */
-body {
-  margin-top: -1px;
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    page-break-after: auto;
+    page-break-before: auto;
+  }
 }
 
 /* CSS 초기화 */
@@ -152,17 +155,22 @@ table {
 }
 
 body {
-  overflow: hidden;
   position: relative;
-  height: 297mm;
-  page-break-before: always;
-  margin: 0;
+  /* height: 297mm; */
+  /* height: 193mm; */
+  height: 100vh;
+  overflow: hidden;
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
   font-size: 8pt;
   line-height: 115%;
   color: #111111;
+}
+
+/* 서브 픽셀 해결 */
+body {
+  margin-top: -1px;
 }
 
 .heading {
@@ -174,7 +182,7 @@ body {
 
 .squars-info {
   position: absolute;
-  top: 100px;
+  top: 48px;
   right: 0;
   text-align: right;
   font-family: 'Roboto';
@@ -266,10 +274,10 @@ footer {
   font-family: 'Roboto';
   color: #666666;
   position: absolute;
-  bottom: 156px;
+  padding-bottom: 52px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  /* margin-right: 52px; */
 }
 
 .tg .bold {
@@ -304,7 +312,7 @@ footer {
 }
 
 .amount tr td:first-child {
-  padding-right: 53pt;
+  padding-right: 80pt;
 }
 
 .amount tr td:last-child {
@@ -328,9 +336,4 @@ a {
 .tg .font-8 {
   font-size: 10pt;
   transform: scale(0.8) translateX(-16px);
-}
-
-.squars-info .font-8 {
-  font-size: 10pt;
-  transform: scale(0.8) translateX(24px);
 }
