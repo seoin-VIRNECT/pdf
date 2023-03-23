@@ -156,9 +156,7 @@ table {
 
 body {
   position: relative;
-  /* height: 297mm; */
-  /* height: 193mm; */
-  height: 100vh;
+  height: 260mm;
   overflow: hidden;
   font-family: 'Helvetica';
   font-style: normal;
@@ -274,8 +272,7 @@ footer {
   font-family: 'Roboto';
   color: #666666;
   position: absolute;
-  padding-bottom: 52px;
-  bottom: 0;
+  bottom: 32px;
   left: 0;
   width: 100%;
 }
